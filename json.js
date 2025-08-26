@@ -1,13 +1,20 @@
+// let jsonString = '{"name": "Bhavya", "age": 22}';
+// let obj = JSON.parse(jsonString);
 
-// // json string
-// const jsonStr = '{"name": "Alice"}';
-// const obj = JSON.parse(jsonStr);
-// console.log(obj.name); 
+// console.log(obj.name);
 
-// // object to string
-// const person = { name: "Bhavya", age: 20 };
-// const jsonString = JSON.stringify(person);
-// console.log(jsonString); 
+let person = {
+  name: "Bhavya",
+  age: 22,
+  isStudent: true,
+  skills: ["JavaScript", "Python", "HTML"],
+  address: {
+    city: "Mumbai",
+   
+  }
+};
 
-const jsonString = JSON.stringify(person);
-console.log(jsonString);
+console.log(person.name);         
+console.log(person.age);
+console.log(person.skills[1]);    
+console.log(person.address.city);  
